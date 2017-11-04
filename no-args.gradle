@@ -1,0 +1,23 @@
+
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-noarg:$versions.kotlin"
+    }
+}
+
+
+
+apply plugin: 'kotlin-noarg'
+
+
+noArg {
+    annotation("com.example.gdgdevfest17.XmlRootElement")
+}
+
+
+
+
